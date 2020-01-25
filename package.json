@@ -1,0 +1,31 @@
+{
+  "name": "gbook-plugin-bot",
+  "version": "0.0.1",
+  "description": "推送机器人（钉钉机器人、企业微信机器人）",
+  "main": "index.js",
+  "engines": {
+    "gbook": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/54dxs/gbook-plugin-bot.git"
+  },
+  "keywords": [
+    "机器人",
+    "推动机器人",
+    "钉钉",
+    "钉钉机器人",
+    "微信",
+    "企业微信",
+    "企业微信机器人"
+  ],
+  "author": "深情小建",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/54dxs/gbook-plugin-bot/issues"
+  },
+  "homepage": "https://github.com/54dxs/gbook-plugin-bot#readme"
+}
