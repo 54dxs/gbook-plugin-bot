@@ -199,6 +199,7 @@ require([
 
 	function pushMsgDingtalk(jObj) {
 		var url = jObj.url;
+		var title = jObj.title;
 		var at = jObj.at;
 		if (!url) {
 			return;
@@ -206,7 +207,7 @@ require([
 		var data = {
 			"msgtype": "markdown",
 			"markdown": {
-				"title": "预警类型",
+				"title": title ? title : "钉钉预警",
 				"text": "**进入时间:** " + formatDate(timeIn) +
 					"\n\n**离开时间:** " + formatDate(new Date()) +
 					"\n\n**访问时长:** " + (browsingDuration(new Date() - timeIn)) +
