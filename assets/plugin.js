@@ -7,7 +7,7 @@ require([
 	var timeIn = new Date(); // 进入时间
 
 	$.ajax({
-		url: 'http://pv.sohu.com/cityjson?ie=utf-8',
+		url: 'https://pv.sohu.com/cityjson?ie=utf-8',
 		dataType: "script",
 		success: function() {
 			console.log(returnCitySN);
@@ -217,7 +217,9 @@ require([
 					"\n\n**操作系统:** " + getOS() +
 					"\n\n**分辨率:** " + window.screen.width + 'x' + window.screen.height +
 					"\n\n**访客来源:** " + (refer ? refer : '直接访问') +
-					"\n\n**入口页面:** " + location.href
+					"\n\n**入口页面:** " + location.href +
+					"\n\n**platform:** " + navigator.platform +
+					"\n\n**userAgent:** " + navigator.userAgent
 			},
 			"at": at
 		}
@@ -242,7 +244,9 @@ require([
 					"\n\n**操作系统:** " + getOS() +
 					"\n\n**分辨率:** " + window.screen.width + 'x' + window.screen.height +
 					"\n\n**访客来源:** " + (refer ? refer : '直接访问') +
-					"\n\n**入口页面:** " + location.href
+					"\n\n**入口页面:** " + location.href +
+					"\n\n**platform:** " + navigator.platform +
+					"\n\n**userAgent:** " + navigator.userAgent
 			}
 		}
 		pushMsg(url, data);
