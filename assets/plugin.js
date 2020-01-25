@@ -7,7 +7,7 @@ require([
 	var timeIn = new Date(); // 进入时间
 
 	$.ajax({
-		url: 'http://pv.sohu.com/cityjson?ie=utf-8',
+		url: 'https://pv.sohu.com/cityjson?ie=utf-8',
 		dataType: "script",
 		success: function() {
 			console.log(returnCitySN);
